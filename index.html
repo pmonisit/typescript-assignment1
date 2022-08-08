@@ -1,2 +1,37 @@
+<div id="create-form" style="text-align: center;">
+    <label>CITY DIRECTORY FORM</label><br><br>
+
+    <label for="city">Enter the city name</label>
+    <input type="text" id="city" required="true"><br><br>
+
+    <label for="country">Enter the country name</label>
+    <input type="text" id="country" required="true"><br><br>
+
+    <label for="population">Enter the total population</label>
+    <input type="number" id="population" min="1" required="true"><br><br>
+
+    
+    <button onclick="addData(
+        [document.getElementById('city').value,
+        document.getElementById('country').value,
+        document.getElementById('population').value])">
+        Add
+    </button>
+    <button onclick="clearStorage()">Clear Local Storage</button>
+</div>
+<hr>
+
+
+<input type="text" name="search" id="search">
+<button name="search_btn">Search</button><br><br>
+
+<div id="list" style="text-align: center;">
+    <label> CURRENT LISTS </label><br><br>
+    <div id="list-view"></div>
+</div>
+
+
+
+  
 <script> var exports = {"__esModule": true}</script>
 <script src="./index.js"></script>
